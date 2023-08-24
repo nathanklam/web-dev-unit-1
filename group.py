@@ -1,3 +1,4 @@
+from collections import Counter
 song_data = [
     {
         "title": "Groove Machine",
@@ -45,15 +46,16 @@ song_data = [
         "tempo": 90,
     },
 ]
-print(song_data[1]["duration"])
+
 
 def collect_data(data, type):
     collected_data = []
     for i in range(len(data)):
         collected_data.append(data[i][type])
-    print(collected_data)
+    return collected_data
 
-collect_data(song_data, "duration")
+collected_data = collect_data(song_data, "duration")
+print(collected_data)
 
 def calculate_statistics(list, identifier):
     if identifier == "MEAN":
@@ -71,15 +73,12 @@ def calculate_statistics(list, identifier):
         n = len(sorted_list)
         if n % 2 == 1:
         # If the length of the list is odd, the median is the middle element
-            median = sorted_lst[n // 2]
+            median = sorted_list[n // 2]
         else:
             # If the length of the list is even, the median is the average of the two middle elements
-            middle1 = sorted_lst[(n // 2) - 1]
-            middle2 = sorted_lst[n // 2]
+            middle1 = sorted_list[(n // 2) - 1]
+            middle2 = sorted_list[n // 2]
             median = (middle1 + middle2) / 2
         print(median)
 
-    else:
-        print("This is not a way to sort")
-
-print(calculate_statistics(collected_data,"MEAN")) 
+print(calculate_statistics(collected_data,"MODE")) 
