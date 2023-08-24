@@ -12,4 +12,4 @@ def sort_items(item_string):
             print("you cannot recycle this item")
     print(total_count)
     
-sort_items('AAPAARRRRPAAPPRRP')
+sort_items('AAPAARRRRPAAPPRRP') 
