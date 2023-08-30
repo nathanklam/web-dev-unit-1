@@ -80,5 +80,5 @@ def calculate_statistics(list, identifier):
             middle2 = sorted_list[n // 2]
             median = (middle1 + middle2) / 2
         print(median)
-
-print(calculate_statistics(collected_data,"MODE")) 
+        
+calculate_statistics(collected_data,"MEAN")
