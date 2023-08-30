@@ -47,7 +47,7 @@ song_data = [
     },
 ]
 
-
+#first "person (me)"
 def collect_data(data, type):
     collected_data = []
     for i in range(len(data)):
@@ -57,6 +57,7 @@ def collect_data(data, type):
 collected_data = collect_data(song_data, "duration")
 print(collected_data)
 
+#second "person (me)"
 def calculate_statistics(list, identifier):
     if identifier == "MEAN":
         total = sum(list)
@@ -80,5 +81,5 @@ def calculate_statistics(list, identifier):
             middle2 = sorted_list[n // 2]
             median = (middle1 + middle2) / 2
         print(median)
-        
+
 calculate_statistics(collected_data,"MEAN")
