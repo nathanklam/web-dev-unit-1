@@ -9,7 +9,7 @@ def sort_items(item_string):
         elif letter == "R":
             total_count["paper"] += 1
         else:
-            print("you cannot recycle this item")
+            print(f"you cannot recycle this item, {letter}")
     print(total_count)
     
 sort_items('AAPAARRRRPAAPPRRP') 
