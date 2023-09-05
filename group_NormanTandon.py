@@ -56,7 +56,7 @@ def collect_data(data, type):
 
 collected_data = collect_data(song_data, "duration")
 print(collected_data)
-
+ 
 #second "person (me)"
 def calculate_statistics(list, identifier):
     if identifier == "MEAN":
